@@ -1,0 +1,17 @@
+{
+  "name": "midweste/wp-lib-imagehooks",
+  "description": "WordPress Image Hooks helper library",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "WordpressImageHooks\\": "src/"
+    },
+    "files": [
+      "wp-lib-imagehooks.php"
+    ]
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
