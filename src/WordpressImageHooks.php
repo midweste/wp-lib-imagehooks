@@ -413,8 +413,11 @@ abstract class WordpressImageHooks
         return $image;
     }
 
-    public function hookImageUri(string $image_path, ?int $width = 0, ?int $height = 0, ?string $ref = '', array $manipulations = []): string
+    public function hookImageUri(string $image_path, $width = 0, $height = 0, ?string $ref = '', array $manipulations = []): string
     {
+        $width = is_numeric($width) ? (int) floor($width) : 0;
+        $height = is_numeric($height) ? (int) floor($height) : 0;
+
         $image = $this->createImageInstance($image_path);
         if ($image === null) {
             return $image_path;
