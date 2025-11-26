@@ -1,7 +1,7 @@
 {
   "name": "midweste/wp-lib-imagehooks",
   "description": "WordPress Image Hooks helper library",
-  "type": "wordpress-plugin",
+  "type": "library",
   "license": "MIT",
   "require": {},
   "autoload": {
