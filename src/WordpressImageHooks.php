@@ -104,7 +104,7 @@ abstract class WordpressImageHooks
                 }
 
                 echo $final;
-            }, PHP_INT_MIN); // this priority has to be low
+            }, PHP_INT_MIN + 10); // this priority has to be low
 
             add_filter('imagehooks_image_resize_shutdown_html', function ($content) use ($settings) {
                 if (empty($content)) {
